@@ -1,124 +1,137 @@
-DINO Paper Reconstruction with ResNet-50 and ImageNet
-Project Overview
-This project aims to reproduce the key findings of the paper "Emerging Properties in Self-Supervised Vision Transformers,"
+# DINO Paper Reconstruction with ResNet-50 and ImageNet
 
-Project Roadmap
-Phase 1: Environment Setup & Literature Review (July 8 - July 9)
+## Project Overview
 
-Task 1.1: Set up the development environment with Python, PyTorch, and other necessary libraries (e.g., torchvision, tqdm).
+This project aims to reproduce the key findings of the paper **"Emerging Properties in Self-Supervised Vision Transformers"** by implementing the DINO (self-DIstillation with NO labels) method using ResNet-50 architecture on the ImageNet dataset.
 
-Task 1.2: Thoroughly re-read the DINO paper, focusing on the self-distillation loss, multi-crop augmentation, and the student-teacher architecture.
+### Key Objectives
+- Implement the DINO self-supervised learning framework
+- Adapt the methodology for ResNet-50 architecture
+- Train on ImageNet dataset
+- Evaluate the learned representations
+- Analyze emerging properties in the learned features
 
-Task 1.3: Review literature on applying self-supervised learning to ResNet architectures.
+---
 
-Phase 2: Data Preparation & Augmentation (July 10 - July 11)
-Task 2.1: Download and prepare the ImageNet dataset.
+## Project Roadmap
 
-Task 2.2: Implement the multi-crop augmentation strategy as described in the DINO paper. This involves creating two global views and several smaller local views.
+### Phase 1: Environment Setup & Literature Review (July 8 - July 9)
 
-Phase 3: Model Implementation (July 14 - July 16)
-Task 3.1: Implement the student and teacher ResNet-50 models.
+**Task 1.1:** Set up the development environment with Python, PyTorch, and other necessary libraries (e.g., torchvision, tqdm).
 
-Task 3.2: Implement the DINO head (a projection head) for both models.
+**Task 1.2:** Thoroughly re-read the DINO paper, focusing on the self-distillation loss, multi-crop augmentation, and the student-teacher architecture.
 
-Task 3.3: Implement the momentum update mechanism for the teacher network's weights.
+**Task 1.3:** Review literature on applying self-supervised learning to ResNet architectures.
 
-Phase 4: Training Pipeline (July 17 - July 21)
-Task 4.1: Implement the DINO loss function (cross-entropy on student/teacher outputs).
+### Phase 2: Data Preparation & Augmentation (July 10 - July 11)
+**Task 2.1:** Download and prepare the ImageNet dataset.
 
-Task 4.2: Build the main training script, integrating the models, data loaders, loss function, and optimizer.
+**Task 2.2:** Implement the multi-crop augmentation strategy as described in the DINO paper. This involves creating two global views and several smaller local views.
 
-Task 4.3: Begin the training process on a subset of ImageNet to debug and validate the pipeline.
+### Phase 3: Model Implementation (July 14 - July 16)
+**Task 3.1:** Implement the student and teacher ResNet-50 models.
 
-Task 4.4: Launch the full training run on ImageNet.
+**Task 3.2:** Implement the DINO head (a projection head) for both models.
 
-Phase 5: Evaluation & Analysis (July 22)
-Task 5.1: Implement evaluation protocols, specifically k-NN evaluation on the frozen features.
+**Task 3.3:** Implement the momentum update mechanism for the teacher network's weights.
 
-Task 5.2: Run the evaluation script on the trained ResNet-50 model.
+### Phase 4: Training Pipeline (July 17 - July 21)
+**Task 4.1:** Implement the DINO loss function (cross-entropy on student/teacher outputs).
 
-Task 5.3: Analyze the results. Do the features show properties like semantic segmentation?
+**Task 4.2:** Build the main training script, integrating the models, data loaders, loss function, and optimizer.
 
-Phase 6: Documentation & Finalization (July 23 - July 24)
-Task 6.1: Document the project, including the architecture, training process, and results.
+**Task 4.3:** Begin the training process on a subset of ImageNet to debug and validate the pipeline.
 
-Task 6.2: Clean up the code and add comprehensive comments.
+**Task 4.4:** Launch the full training run on ImageNet.
 
-Task 6.3: Finalize the README.md with a summary of findings and instructions to reproduce the experiment.
+### Phase 5: Evaluation & Analysis (July 22)
+**Task 5.1:** Implement evaluation protocols, specifically k-NN evaluation on the frozen features.
 
-Task 6.4: Prepare a final presentation or report of the project outcomes.
+**Task 5.2:** Run the evaluation script on the trained ResNet-50 model.
 
-Project Calendar & Task Assignments
-Project Start Date: July 8, 2025
-Project Deadline: July 24, 2025
+**Task 5.3:** Analyze the results. Do the features show properties like semantic segmentation?
 
-Week 1 (July 7 - July 11)
-Tuesday, July 8:
+### Phase 6: Documentation & Finalization (July 23 - July 24)
+**Task 6.1:** Document the project, including the architecture, training process, and results.
 
-[X] Task 1.1: Setup development environment.
+**Task 6.2:** Clean up the code and add comprehensive comments.
 
-[ ] Task 1.2 (Start): Begin DINO paper review.
+**Task 6.3:** Finalize the README.md with a summary of findings and instructions to reproduce the experiment.
 
-Wednesday, July 9:
+**Task 6.4:** Prepare a final presentation or report of the project outcomes.
 
-[ ] Task 1.2 (Finish): Complete DINO paper review.
+---
 
-[ ] Task 1.3: Review ResNet SSL literature.
+## Project Calendar & Task Assignments
 
-Thursday, July 10:
+**Project Start Date:** July 8, 2025  
+**Project Deadline:** July 24, 2025
 
-[ ] Task 2.1: Download and prepare ImageNet.
+### Week 1 (July 7 - July 11)
+#### Tuesday, July 8:
+- [x] Task 1.1: Setup development environment.
+- [ ] Task 1.2 (Start): Begin DINO paper review.
 
-Friday, July 11:
+#### Wednesday, July 9:
+- [ ] Task 1.2 (Finish): Complete DINO paper review.
+- [ ] Task 1.3: Review ResNet SSL literature.
 
-[ ] Task 2.2: Implement multi-crop augmentation.
+#### Thursday, July 10:
+- [ ] Task 2.1: Download and prepare ImageNet.
 
-Week 2 (July 14 - July 18)
-Monday, July 14:
+#### Friday, July 11:
+- [ ] Task 2.2: Implement multi-crop augmentation.
 
-[ ] Task 3.1: Implement student and teacher ResNet-50 models.
+### Week 2 (July 14 - July 18)
+#### Monday, July 14:
+- [ ] Task 3.1: Implement student and teacher ResNet-50 models.
 
-Tuesday, July 15:
+#### Tuesday, July 15:
+- [ ] Task 3.2: Implement the DINO projection head.
 
-[ ] Task 3.2: Implement the DINO projection head.
+#### Wednesday, July 16:
+- [ ] Task 3.3: Implement the teacher momentum update.
 
-Wednesday, July 16:
+#### Thursday, July 17:
+- [ ] Task 4.1: Implement the DINO loss function.
+- [ ] Task 4.2 (Start): Begin building the main training script.
 
-[ ] Task 3.3: Implement the teacher momentum update.
+#### Friday, July 18:
+- [ ] Task 4.2 (Finish): Finalize the training script.
 
-Thursday, July 17:
+### Week 3 (July 21 - July 24)
+#### Monday, July 21:
+- [ ] Task 4.3: Debug training pipeline on a data subset.
+- [ ] Task 4.4: Launch the full training run.
 
-[ ] Task 4.1: Implement the DINO loss function.
+#### Tuesday, July 22:
+- [ ] Task 5.1: Implement k-NN evaluation.
+- [ ] Task 5.2: Run evaluation.
+- [ ] Task 5.3: Analyze results.
 
-[ ] Task 4.2 (Start): Begin building the main training script.
+#### Wednesday, July 23:
+- [ ] Task 6.1: Document the project architecture and process.
+- [ ] Task 6.2: Clean and comment code.
 
-Friday, July 18:
+#### Thursday, July 24 (Deadline):
+- [ ] Task 6.3: Finalize README.md.
+- [ ] Task 6.4: Prepare final report/presentation.
 
-[ ] Task 4.2 (Finish): Finalize the training script.
+---
 
-Week 3 (July 21 - July 24)
-Monday, July 21:
+## Getting Started
 
-[ ] Task 4.3: Debug training pipeline on a data subset.
+### Prerequisites
+- Python 3.8+
+- PyTorch
+- torchvision
+- CUDA-compatible GPU (recommended)
 
-[ ] Task 4.4: Launch the full training run.
+### Installation
+```bash
+pip install torch torchvision tqdm numpy matplotlib
+```
 
-Tuesday, July 22:
+---
 
-[ ] Task 5.1: Implement k-NN evaluation.
-
-[ ] Task 5.2: Run evaluation.
-
-[ ] Task 5.3: Analyze results.
-
-Wednesday, July 23:
-
-[ ] Task 6.1: Document the project architecture and process.
-
-[ ] Task 6.2: Clean and comment code.
-
-Thursday, July 24 (Deadline):
-
-[ ] Task 6.3: Finalize README.md.
-
-[ ] Task 6.4: Prepare final report/presentation.
+*This project is part of the Neuromatch Academy Deep Learning course.*
